@@ -25,7 +25,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/x-tweet-fetcher@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/x-tweet-fetcher@sha256:14a7858ec71dd4bb3400387743cf80abc82283b6cb03e5ffe2b9b584a8113ddc
   platforms: [linux/amd64, linux/arm64]
   command: ["xtf", "--url", "{url}", "--lang", "en"]
   output_format: json
